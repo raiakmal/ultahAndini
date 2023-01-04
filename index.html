@@ -76,9 +76,9 @@
     } 
     
     async function tanya() { 
-      var { value: kado } = await swal.fire({ title: "Di hari spesial ini kamu mau nya apa?", input: "text", showCancelButton: false, }); 
+      var { value: kado } = await swal.fire({ title:"Di hari spesial ini kamu mau nya apa?", input: "text", showCancelButton: false, }); 
       if (kado) { 
-        await swal.fire("Kirim jawabannya ke wa aku ya"); wa(kado); 
+        await swal.fire("Kirim jawabannya ke WA aku ya"); wa(kado); 
       } else { 
         await swal.fire("Jangan dikosongin dong"); tanya(); 
       } 
